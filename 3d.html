@@ -4,16 +4,14 @@
     <meta charset="UTF-8" />
     <title>3D</title>
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS file -->
     <link rel="stylesheet" href="style.css" />
 </head>
-    <body>
+    <body class="threed-page">
         <header>
             <div class="site-title">Gabriela Z's Portfolio</div>
             <nav>
@@ -29,14 +27,14 @@
         </header>
 
     <main>
-            <h1>3D</h1>
+        <h1 class="fade-right delay-1">3D</h1>
             
-            <div class="media-card">
+            <div class="fade-up delay-2">
 
-            <!-- MAIN IMAGE -->
+                <div class="media-card">
+
                 <img id="mainImage" src="images/House%20Pic%201.png" alt="3D House">
 
-                <!-- THUMBNAILS -->
                 <div class="thumbnail-row">
                     <img src="images/House%20Pic%201.png" onclick="changeImage(this)">
                     <img src="images/House%20Pic%20Front.png" onclick="changeImage(this)">
@@ -45,18 +43,29 @@
                     <img src="images/House%20Pic%202.png" onclick="changeImage(this)">
                 </div>
 
-            </div>
-        <p class="media-description">
+                </div>
+        </div>
+
+        <p class="media-description fade-right delay-3">
             The object is a modern two-story house in grey, white, and beige with a small balcony, garden, palm tree, stairs, and a streetlight in front. It has multiple windows, sliding doors, and a flat textured roof, with a clean and symmetrical design that balances shapes and colors across the structure. The inspiration came from Pinterest and modern house designs seen in video games like Minecraft, and I chose it because it was simple, visually appealing, and a good first project to build in Tinkercad. The model is meant as a simple architectural render viewed from different angles, mainly built using cube shapes, along with cylinders, spheres, wedges, and holes to create details like the palm tree, streetlight, windows, and doors. I used different scale sizes and grouping to organize parts like the balcony and window frames, and holes to add depth and realism. The most challenging part was coloring and separating the walls to avoid a flat look, so I adjusted placement and layering to balance the design, and I would make the model slightly bigger next time for easier precision.
         </p>
     </main>
 
-        <footer>
-<p>Software used: Tinkercad</p>
+<footer class="site-footer">
 
-            <a href="index.html">Back Home</a>
-            <p>Created by Gabriela Z. &copy; 2026 All rights reserved.</p>
-        </footer>
+    <div class="footer-card">
+
+        <p class="footer-title">Software Used</p>
+        <p class="footer-text">Tinkercad</p>
+
+    </div>
+
+    <div class="footer-bottom">
+        <a href="index.html">Back Home</a>
+        <p>Created by Gabriela Z. © 2026 All rights reserved.</p>
+    </div>
+
+</footer>
 <script>
 function changeImage(img){
     document.getElementById("mainImage").src = img.src;
